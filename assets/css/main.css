@@ -1,0 +1,126 @@
+:root {
+    font-family: sans-serif;
+    --blue: rgb(1, 1, 28);
+    --green: rgb(43, 168, 124);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset>label {
+    font-size: 18px;
+}
+
+button {
+    font: inherit;
+    padding: .25rem;
+}
+
+
+
+input,
+textarea {
+    font-family: inherit;
+}
+
+input,
+button,
+textarea {
+    display: block;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    padding: .25rem;
+    width: 15rem;
+    margin: .5rem 0;
+}
+
+button:hover {
+    background-color: var(--green);
+    color: white;
+}
+
+main {
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 3rem auto;
+}
+
+.navigation {
+    background-color: var(--blue);
+    padding: 1.5em 2em;
+
+}
+
+.navigation>a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navigation>a:hover,
+.active {
+    color: var(--green);
+}
+
+
+
+.authentification {
+    display: block;
+    margin: 5rem auto;
+    width: 20rem;
+}
+
+.authentification fieldset+fieldset {
+    margin-top: 1rem;
+}
+
+.error {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: rgb(248, 170, 170);
+}
+
+.error:empty {
+    display: none;
+}
+
+
+
+
+main>*+* {
+    margin-top: 2rem;
+
+}
+
+main>article {
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+main>article>section {
+    margin: 1.5rem 0 .5rem 0;
+}
+
+main>article>footer>span {
+    font-style: italic;
+    font-size: .9rem;
+}
+
+.gerer-article input,
+.gerer-article textarea {
+    width: 30rem;
+}
+
+.gerer-article>*+* {
+    margin-top: 1rem;
+
+}
