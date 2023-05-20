@@ -7,7 +7,7 @@ if (str_contains($_SERVER['DOCUMENT_ROOT'], 'D:')) {
     define("USERNAME", "root");
     define("PASSWORD", "");
 } else {
-    require(__DIR__ . 'db-credentials.php');
+    require(__DIR__ . '/db-credentials.php');
 }
 
 function connectDB()
