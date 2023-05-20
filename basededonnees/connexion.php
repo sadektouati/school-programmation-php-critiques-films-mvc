@@ -7,7 +7,7 @@ if ($_SERVER['DOCUMENT_ROOT'] === 'D:/MyWork/cours') {
     define("USERNAME", "root");
     define("PASSWORD", "");
 } else {
-    require('db-credentials.php');
+    require('./db-credentials.php');
 }
 
 function connectDB()
