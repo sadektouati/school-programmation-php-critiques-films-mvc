@@ -3,11 +3,11 @@
 define("SERVER", "localhost");
 define("DBNAME", "blog");
 
-if ($_SERVER['DOCUMENT_ROOT'] === 'D:/MyWork/cours') {
+if (str_contains($_SERVER['DOCUMENT_ROOT'], 'D:')) {
     define("USERNAME", "root");
     define("PASSWORD", "");
 } else {
-    require(__DIR__ . '/db-credentials.php');
+    require(__DIR__ . 'db-credentials.php');
 }
 
 function connectDB()
