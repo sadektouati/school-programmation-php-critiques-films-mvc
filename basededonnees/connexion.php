@@ -1,7 +1,7 @@
 <?php
 
 define("SERVER", "localhost");
-define("DBNAME", "blog");
+define("DBNAME", "pr_blog");
 
 if (str_contains($_SERVER['DOCUMENT_ROOT'], 'D:')) {
     define("USERNAME", "root");
