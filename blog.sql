@@ -1,7 +1,7 @@
-drop database blog;
-create database blog;
+drop database pr_blog;
+create database pr_blog;
 
-use blog;
+use pr_blog;
 
 create table if not exists usager(
     id int unsigned auto_increment primary key,
