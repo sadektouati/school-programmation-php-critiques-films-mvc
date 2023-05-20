@@ -7,9 +7,7 @@ if ($_SERVER['DOCUMENT_ROOT'] === 'D:/MyWork/cours') {
     define("PASSWORD", "");
     define("DBNAME", "blog");
 } else {
-    define("USERNAME", "e2195836");
-    define("PASSWORD", "uxayS8h0bQv15fE6bwB2");
-    define("DBNAME", "e2195836");
+    require('db-credentials.php');
 }
 
 function connectDB()
