@@ -1,11 +1,11 @@
 <?php
 
 define("SERVER", "localhost");
+define("DBNAME", "blog");
 
 if ($_SERVER['DOCUMENT_ROOT'] === 'D:/MyWork/cours') {
     define("USERNAME", "root");
     define("PASSWORD", "");
-    define("DBNAME", "blog");
 } else {
     require('db-credentials.php');
 }
